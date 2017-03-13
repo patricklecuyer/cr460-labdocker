@@ -1,10 +1,10 @@
 # Section 1
-FROM ubuntu
+FROM ubuntu:17.04
 
 # Section 2
 RUN apt-get update
 RUN apt-get -y install nginx
-COPY index.html /var/www/html
+COPY files/index.html /var/www/html
 
 
 # Section 3
